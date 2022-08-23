@@ -17,9 +17,19 @@ public class HelloController {
     private TextField campoNombre;
 
     @FXML
+    private TextField campotelefono;
+
+    @FXML
+    private TextField campodireccion;
+
+
+
+    @FXML
     protected void aniadirButtonClick(){
         String nombre = campoNombre.getText();
-        System.out.println(nombre);
+        String telefono = campotelefono.getText();
+        String direccion  = campodireccion.getText();
+        System.out.println(nombre + " | " + telefono + " | " + direccion);
         //return nombre;
     }
 }
