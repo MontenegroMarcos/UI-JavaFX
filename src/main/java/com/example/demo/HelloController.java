@@ -32,4 +32,32 @@ public class HelloController {
         System.out.println(nombre + " | " + telefono + " | " + direccion);
         //return nombre;
     }
+
+
+    @FXML
+    protected void aniadirRestaurante(){
+        if (campoNombre.getText().equals(null) || campodireccion.getText().equals(null) || campotelefono.getText().equals(null)){
+
+            //HAY UN ERROR , no se anaide
+        } else {
+
+            try {
+                String nombreRestaurante = campoNombre.getText();
+                String direccionRestaurante = campodireccion.getText();
+                String telefonoRestaurante = campotelefono.getText();
+
+                //Aqui uso inyeccion de dependecnias y creo el restaurante
+
+
+            }catch (Exception e){
+
+            }
+
+        }
+
+
+    }
+
+
+
 }
